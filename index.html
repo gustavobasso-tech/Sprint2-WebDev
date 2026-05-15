@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2 - Web Development</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Projeto Social Connect - Sprint 2</h1>
+        <p id="boas-vindas"></p> </header>
+
+    <main>
+        <section class="container">
+            <h2>Galeria de Fotos</h2>
+            <div class="slideshow">
+                <img id="slide" src="https://picsum.photos/id/10/600/300" alt="Slideshow">
+                <div class="controles">
+                    <button id="anterior">❮ Anterior</button>
+                    <button id="proximo">Próximo ❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Área de Login</h2>
+            <form id="form-login">
+                <div class="campo">
+                    <label>Usuário:</label>
+                    <input type="text" id="usuario" placeholder="Digite seu RM">
+                </div>
+                <div class="campo">
+                    <label>Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                </div>
+                <button type="submit" id="btn-entrar">Entrar</button>
+            </form>
+            <p id="mensagem-feedback"></p>
+        </section>
+
+        <section class="container" id="identificacao">
+            <h3>Integrantes do Grupo</h3>
+            <ul>
+                <li><strong>Gustavo Basso da Purificação</strong> - RM: [Seu RM Aqui]</li>
+                </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
